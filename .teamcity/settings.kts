@@ -37,6 +37,8 @@ object Build : BuildType({
         root(DslContext.settingsRoot)
     }
 
+    artifactRules = "target/*.jar"
+
     steps {
         maven {
             id = "Maven2"
